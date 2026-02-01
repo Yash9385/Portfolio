@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash | Portfolio</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!-- Boxicons -->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Typed JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+
+    <!-- 🔥 MODERN HEADER -->
+    <header class="header">
+
+        <nav class="navbar">
+            <a href="#home"><i class='bx bx-home'></i> Home</a>
+            <a href="#about"><i class='bx bx-user'></i> About</a>
+            <a href="#services"><i class='bx bx-briefcase'></i> My services</a>
+            <a href="#skills"><i class='bx bx-bar-chart-alt-2'></i> Skills</a>
+            <a href="resume.pdf" target="_blank"><i class='bx bx-file'></i> Resume</a>
+            <a href="#projects"><i class='bx bx-code-alt'></i> Projects</a>
+            <a href="#contact"><i class='bx bx-envelope'></i> Contact</a>
+
+        </nav>
+    </header>
+
+
+    <section class="home" id="home">
+        <div class="stars"></div>
+
+        <div class="home-content">
+            <h3>Hello, It's Me 👋</h3>
+            <h1>Yash</h1>
+            <h3 class="typing-line">
+                And I'm a <span class="text"></span>
+            </h3>
+
+
+            <p>I am an Information Technology student and a passionate Full Stack Developer who loves building
+                modern, scalable, and user-friendly web applications.</p>
+
+            <div class="home-sci">
+                <a href="https://x.com/home" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/yashsingh4243?igsh=MXF0c2txMXQ2a2I1Ng==" target="_blank"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/Yash9385" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <a href="#about" class="btn-box">More About Me</a>
+        </div>
+
+        <!-- IMAGE SECTION -->
+        <div class="home-img">
+            <div class="ring-white"></div> <!-- YAHAN HOGA -->
+            <div class="img-box">
+                <img src="images/image.jpeg" alt="Yash">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <!-- LEFT SIDE TEXT -->
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+
+            <h4>Full Stack Developer & <span class="ai">AI Enthusiast</span></h4>
+
+            <p>
+                Hello! I'm <span class="highlight">Yash Singh</span>, a passionate
+                <span class="highlight">Full Stack Developer</span> who builds
+                smart, scalable and real-world web applications.
+            </p>
+
+            <p>
+                I specialize in <span class="highlight">JavaScript, Node.js, React.js, Next.js, MongoDB</span>
+                and modern UI technologies.
+            </p>
+
+            <p>
+                I have built projects like <span class="highlight">QuiChat</span> (Chat App),
+                <span class="highlight">Thumbinfy</span> (AI Tool Platform),
+                and <span class="highlight">PingUp</span> (Social Media App).
+            </p>
+
+            <p>
+                My interest lies in <span class="highlight">Artificial Intelligence</span>,
+                <span class="highlight">APIs</span>, and powerful backend systems.
+            </p>
+
+            <a href="#projects" class="read">View My Work</a>
+        </div>
+
+        <!-- RIGHT SIDE IMAGE -->
+        <div class="about-img">
+            <img src="images/ai.png" alt="AI Developer Illustration">
+        </div>
+
+    </section>
+
+
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+
+            <div class="service-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Full Stack Development</h3>
+                <p>Complete web apps using modern frontend & backend technologies.</p>
+                <button class="btn" onclick="toggleDetails('fullstack')">Learn More</button>
+                <div id="fullstack" class="service-details">
+                    <p>I build complete MERN stack apps, dashboards, authentication systems, APIs, and scalable
+                        architectures.</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <i class='bx bx-palette'></i>
+                <h3>UI/UX Design</h3>
+                <p>Modern, responsive, and user-friendly interface design.</p>
+                <button class="btn" onclick="toggleDetails('ux')">Learn More</button>
+                <div id="ux" class="service-details">
+                    <p>I design clean interfaces, user flows, wireframes, and engaging experiences using modern design
+                        principles.</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <i class='bx bx-server'></i>
+                <h3>Backend Development</h3>
+                <p>Secure APIs and scalable server-side architecture.</p>
+                <button class="btn" onclick="toggleDetails('backend')">Learn More</button>
+                <div id="backend" class="service-details">
+                    <p>Node.js, Express, authentication, server logic, database integration, and performance
+                        optimization.</p>
+                </div>
+            </div>
+
+
+            <div class="service-box">
+                <i class='bx bx-mobile-alt'></i>
+                <h3>Responsive Design</h3>
+                <p>Mobile-friendly layouts that work on all devices.</p>
+                <button class="btn" onclick="toggleDetails('responsive')">Learn More</button>
+                <div id="responsive" class="service-details">
+                    <p>Flexible layouts using CSS, Flexbox, Grid, and media queries.</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <i class='bx bx-cloud'></i>
+                <h3>Deployment & Hosting</h3>
+                <p>Deploy apps on cloud platforms with CI/CD setup.</p>
+                <button class="btn" onclick="toggleDetails('deploy')">Learn More</button>
+                <div id="deploy" class="service-details">
+                    <p>Deploy on AWS, Vercel, Render, VPS, and automate builds using CI/CD pipelines.</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <i class='bx bx-lock'></i>
+                <h3>Web Security</h3>
+                <p>Authentication, authorization, and security best practices.</p>
+                <button class="btn" onclick="toggleDetails('security')">Learn More</button>
+                <div id="security" class="service-details">
+                    <p>JWT auth, password encryption, role-based access, and security hardening.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">Professional <span>Skillset</span></h2>
+
+        <div class="skills-grid">
+
+            <!-- LANGUAGES -->
+            <div class="skill-box"><i class='bx bxl-javascript'></i></div>
+            <div class="skill-box"><i class='bx bxl-typescript'></i></div>
+            <div class="skill-box"><i class='bx bxl-python'></i></div>
+            <div class="skill-box"><i class='bx bxl-java'></i></div>
+            <div class="skill-box"><i class='bx bxl-c-plus-plus'></i></div>
+
+            <!-- FRONTEND -->
+            <div class="skill-box"><i class='bx bxl-react'></i></div>
+            <div class="skill-box"><i class='bx bx-code-alt'></i></div>
+            <div class="skill-box"><i class='bx bxl-html5'></i></div>
+            <div class="skill-box"><i class='bx bxl-css3'></i></div>
+            <div class="skill-box"><i class='bx bxl-tailwind-css'></i></div>
+
+            <!-- BACKEND -->
+            <div class="skill-box"><i class='bx bxl-nodejs'></i></div>
+            <div class="skill-box"><i class='bx bx-server'></i></div>
+
+            <!-- DATABASES -->
+            <div class="skill-box"><i class='bx bxl-mongodb'></i></div>
+            <div class="skill-box"><i class='bx bx-data'></i></div> <!-- SQL -->
+            <div class="skill-box"><i class='bx bxl-postgresql'></i></div>
+
+            <!-- TOOLS -->
+            <div class="skill-box"><i class='bx bxl-git'></i></div>
+            <div class="skill-box"><i class='bx bxl-github'></i></div>
+            <div class="skill-box"><i class='bx bxl-docker'></i></div>
+            <div class="skill-box"><i class='bx bxl-figma'></i></div>
+            <div class="skill-box"><i class='bx bxl-visual-studio'></i></div>
+
+            <!-- CLOUD / DEVOPS -->
+            <div class="skill-box"><i class='bx bxl-firebase'></i></div>
+            <div class="skill-box"><i class='bx bx-cloud'></i></div> <!-- Cloud -->
+
+            <!-- AI / APIs -->
+            <div class="skill-box"><i class='bx bx-brain'></i></div> <!-- AI -->
+            <div class="skill-box"><i class='bx bx-network-chart'></i></div> <!-- APIs -->
+
+            <!-- OTHER -->
+            <div class="skill-box"><i class='bx bxl-redux'></i></div>
+            <div class="skill-box"><i class='bx bxl-bootstrap'></i></div>
+            <div class="skill-box"><i class='bx bx-code-alt'></i></div>
+            <div class="skill-box"><i class='bx bx-terminal'></i></div>
+            <div class="skill-box"><i class='bx bx-shield'></i></div>
+            <div class="skill-box"><i class='bx bx-server'></i></div>
+
+        </div>
+
+        <!-- PROFESSIONAL SKILLS -->
+        <section class="professional-skills">
+            <h2 class="section-title">Professional <span>Skills</span></h2>
+
+            <div class="skills-wrapper">
+
+                <!-- SOFT SKILLS -->
+                <div class="skill-card">
+                    <div class="circle" data-percent="90"></div>
+                    <h3>Creativity</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="circle" data-percent="65"></div>
+                    <h3>Communication</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="circle" data-percent="75"></div>
+                    <h3>Problem Solving</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="circle" data-percent="85"></div>
+                    <h3>Teamwork</h3>
+                </div>
+
+                <!-- 🔥 ADD THESE TECH CONFIDENCE SKILLS -->
+                <div class="skill-card">
+                    <div class="circle" data-percent="88"></div>
+                    <h3>Frontend Development</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="circle" data-percent="82"></div>
+                    <h3>Backend Development</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="circle" data-percent="80"></div>
+                    <h3>API Integration</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="circle" data-percent="78"></div>
+                    <h3>Database Design</h3>
+                </div>
+
+            </div>
+        </section>
+        <!-- ================= PROJECTS ================= -->
+        <section class="projects" id="projects">
+            <h2 class="section-title">My <span>Projects</span></h2>
+
+            <div class="projects-container">
+
+                <!-- 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/quick-chat.png" alt="QuickChat">
+                    </div>
+                    <h3>QuickChat</h3>
+                    <p>Real-time full stack chat application with authentication, live messaging, and socket-based
+                        communication.</p>
+                    <a href="https://github.com/Yash9385?tab=repositories" target="_blank" class="github-btn">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </div>
+
+                <!-- 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/thumblify.png" alt="QuickChat">
+                    </div>
+                    <h3>Thumblify</h3>
+                    <p>AI-powered full stack platform to generate thumbnails, automate designs, and manage content
+                        creation.
+                    </p>
+                    <a href="https://github.com/Yash9385?tab=repositories" target="_blank" class="github-btn">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </div>
+
+                <!-- 3 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/Ping-up.png" alt="QuickChat">
+                    </div>
+                    <h3>PingUp</h3>
+                    <p>Full stack social media app with posts, likes, user profiles, and modern responsive UI.</p>
+                    <a href="https://github.com/Yash9385?tab=repositories" target="_blank" class="github-btn">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </div>
+
+                <!-- 4 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/ecommerce.png" alt="QuickChat">
+                    </div>
+                    <h3>E-Commerce Platform</h3>
+                    <p>Complete shopping platform with cart system, authentication, product management, and payment
+                        flow.
+                    </p>
+                    <a href="https://github.com/Yash9385?tab=repositories" target="_blank" class="github-btn">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </div>
+
+                <!-- 5 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/Music-Website.png" alt="QuickChat">
+                    </div>
+                    <h3>Music Website (Frontend)</h3>
+                    <p>Modern music streaming UI with playlist layouts, animations, and responsive design.</p>
+                    <a href="https://github.com/Yash9385?tab=repositories" target="_blank" class="github-btn">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </div>
+
+                <!-- 6 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/Movie-Tickets.png" alt="QuickChat">
+                    </div>
+                    <h3>Movie-Tickets</h3>
+                    <p>Scalable store with admin dashboard, order management, API integrations, and secure backend.</p>
+                    <a href="https://github.com/Yash9385?tab=repositories" target="_blank" class="github-btn">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!-- ================= CONTACT SECTION ================= -->
+        <section class="contact" id="contact">
+
+            <h2 class="contact-title">Contact <span>Me</span></h2>
+
+            <div class="contact-container">
+                <div class="contact-left">
+                    <h4>Let's Work Together</h4>
+                    <div class="status-badge">🟢 Available for Work</div>
+                    <p>
+                    <p>I’m actively seeking an opportunity to work with a growth-driven organization where I can apply
+                        my
+                        full-stack development skills, solve real-world problems, and contribute to impactful digital
+                        products. I am passionate about learning new technologies, improving continuously, and
+                        collaborating
+                        with experienced teams. My goal is to grow as a developer while delivering scalable, efficient,
+                        and
+                        user-focused solutions that add real value to the company and its users.</p>
+                    </p>
+                    <div class="contact-info">
+                        <p><i class='bx bx-envelope'></i> yashsingh0120@gmail.com</p>
+                        <p><i class='bx bx-phone'></i> +91 9312445575</p>
+                        <p><i class='bx bx-map'></i> India</p>
+
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="https://x.com/home" target="_blank"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.instagram.com/yashsingh4243?igsh=MXF0c2txMXQ2a2I1Ng==" target="_blank"><i
+                                class='bx bxl-instagram'></i></a>
+                        <a href="https://github.com/Yash9385" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="contact-right">
+                    <form>
+                        <input type="text" placeholder="Enter Your Name" required>
+                        <input type="email" placeholder="Enter Your Email" required>
+                        <input type="text" placeholder="Enter Your Subject">
+                        <textarea placeholder="Enter Your Message"></textarea>
+                        <button type="submit" class="contact-btn">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+
+                <!-- LEFT -->
+                <div class="footer-left">
+                    Designed and Developed by <span>Yash Singh</span>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="footer-right">
+                    <a href="https://x.com/home" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/yashsingh4243?igsh=MXF0c2txMXQ2a2I1Ng==" target="_blank"><i
+                            class='bx bxl-instagram'></i></a>
+                    <a href="https://github.com/Yash9385" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+
+            </div>
+        </footer>
+
+        <script src="main.js"></script>
+
+</body>
+
+</html>
