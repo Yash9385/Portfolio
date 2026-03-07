@@ -31,9 +31,11 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         try {
-            const res = await fetch("http://localhost:3000/send-email", {
+            const res = await fetch("https://portfolio-1oiq.onrender.com/send-email", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
+                headers: { 
+                    "Content-Type": "application/json"
+                },
                 body: JSON.stringify(data),
             });
 
