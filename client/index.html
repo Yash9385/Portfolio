@@ -240,7 +240,7 @@
 
         </div>
 
-       
+
         <!-- ================= PROJECTS ================= -->
         <section class="projects" id="projects">
             <h2 class="section-title">My <span>Projects</span></h2>
@@ -363,14 +363,23 @@
 
                 <!-- RIGHT SIDE -->
                 <div class="contact-right">
-                    <form id="contact-form">
-                        <input type="text" id="name" placeholder="Enter Your Name" required>
-                        <input type="email" id="email" placeholder="Enter Your Email" required>
-                        <input type="text" id="subject" placeholder="Enter Your Subject">
-                        <textarea id="message" placeholder="Enter Your Message"></textarea>
+                    <form action="https://formsubmit.co/yashsingh0120@gmail.com" method="POST">
+
+                        <input type="text" name="name" placeholder="Enter Your Name" required>
+
+                        <input type="email" name="email" placeholder="Enter Your Email" required>
+
+                        <input type="text" name="subject" placeholder="Enter Your Subject">
+
+                        <textarea name="message" placeholder="Enter Your Message"></textarea>
+
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+
                         <button type="submit" class="contact-btn">Submit</button>
+
                     </form>
-                </div>
+            </div>
 
             </div>
 
